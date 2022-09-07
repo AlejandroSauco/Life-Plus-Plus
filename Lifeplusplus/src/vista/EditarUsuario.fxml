@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <GridPane layoutX="10.0" layoutY="10.0" prefHeight="90.0" prefWidth="769.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="10.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="200.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="200.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="50.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="10.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="215.0" minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="150.0" minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="90.0" minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="80.0" minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <JFXButton fx:id="btnRegresar" onAction="#Regresar" styleClass="botonNegro" stylesheets="@../css/general.css" text="Regresar" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="9" GridPane.valignment="CENTER">
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin>
+            </JFXButton>
+            <Label text="Nombre y apellidos" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </Label>
+            <JFXTextField fx:id="txtNombre" focusColor="#e46161" opacity="0.5" promptText="Nombre y apellidos" unFocusColor="#e46161" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+            <Label fx:id="tituloDni" text="DNI" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="txtDni" focusColor="#e46161" opacity="0.5" promptText="DNI" unFocusColor="#e46161" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+            <Label fx:id="tituloInstitucion" text="Institución" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="6" GridPane.valignment="CENTER">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="txtInstitucion" focusColor="#e46161" opacity="0.5" promptText="Institución" unFocusColor="#e46161" GridPane.columnIndex="2" GridPane.rowIndex="6" />
+            <Label fx:id="tituloRol" prefHeight="20.0" prefWidth="248.0" text="Rol que ocupa en su institución" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="8" GridPane.valignment="CENTER">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </Label>
+            <JFXTextField fx:id="txtRol" focusColor="#e46161" opacity="0.5" promptText="Rol" unFocusColor="#e46161" GridPane.columnIndex="2" GridPane.rowIndex="8" />
+            <Label text="Correo electrónico" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="3" GridPane.valignment="CENTER">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="txtCorreo" focusColor="#e46161" opacity="0.5" promptText="Correo electrónico" unFocusColor="#e46161" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+            <Label fx:id="tituloFecha" text="Fecha de nacimiento" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="5" GridPane.valignment="CENTER">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <DatePicker fx:id="cuadroFecha" GridPane.columnIndex="2" GridPane.rowIndex="5" GridPane.valignment="CENTER" />
+            <Label text="Contraseña" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="4" GridPane.valignment="CENTER">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <JFXPasswordField fx:id="fieldContrasena" focusColor="#e46161" unFocusColor="#e46161" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER" />
+            <Label fx:id="tituloIdentificacion" text="Identificación de su institución" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="7" GridPane.valignment="CENTER">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="txtIdentificacion" focusColor="#e46161" opacity="0.5" promptText="Identificación" unFocusColor="#e46161" GridPane.columnIndex="2" GridPane.rowIndex="7" />
+            <JFXButton fx:id="btnNombre" onAction="#Actualizar" styleClass="BtnGeneral1" stylesheets="@../css/general.css" text="Actualizar" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+            <JFXButton fx:id="btnDni" onAction="#Actualizar" styleClass="BtnGeneral1" stylesheets="@../css/general.css" text="Actualizar" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
+            <JFXButton fx:id="btnCorreo" onAction="#Actualizar" styleClass="BtnGeneral1" stylesheets="@../css/general.css" text="Actualizar" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER" />
+            <JFXButton fx:id="btnFecha" onAction="#Actualizar" styleClass="BtnGeneral1" stylesheets="@../css/general.css" text="Actualizar" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="5" GridPane.valignment="CENTER" />
+            <JFXButton fx:id="btnContrasena" onAction="#Actualizar" styleClass="BtnGeneral1" stylesheets="@../css/general.css" text="Actualizar" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER" />
+            <JFXButton fx:id="btnInstitucion" onAction="#Actualizar" styleClass="BtnGeneral1" stylesheets="@../css/general.css" text="Actualizar" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="6" GridPane.valignment="CENTER" />
+            <JFXButton fx:id="btnIdentificacion" onAction="#Actualizar" styleClass="BtnGeneral1" stylesheets="@../css/general.css" text="Actualizar" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="7" GridPane.valignment="CENTER" />
+            <JFXButton fx:id="btnRol" onAction="#Actualizar" styleClass="BtnGeneral1" stylesheets="@../css/general.css" text="Actualizar" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="8" GridPane.valignment="CENTER" />
+            <Label fx:id="feedback" alignment="CENTER" prefHeight="25.0" prefWidth="243.0" text="Datos sin actualizar" textAlignment="CENTER" textOverrun="CLIP" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="9" />
+            <GridPane GridPane.columnIndex="1" GridPane.rowIndex="9">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <JFXButton fx:id="btnAceptarSolicitud" onAction="#AceptarSolicitud" prefHeight="31.0" prefWidth="120.0" styleClass="BtnGeneral1" stylesheets="@../css/general.css" text="Aceptar" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                  <JFXButton fx:id="btnRechazar" onAction="#RechazarSolicitud" prefHeight="31.0" prefWidth="120.0" styleClass="BtnGeneral1" stylesheets="@../css/general.css" text="Rechazar" />
+               </children>
+            </GridPane>
+            <JFXButton fx:id="btnDarBaja" onAction="#DarBaja" prefHeight="31.0" prefWidth="120.0" styleClass="BtnGeneral1" stylesheets="@../css/general.css" text="Dar de baja" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="10" GridPane.valignment="CENTER" />
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>

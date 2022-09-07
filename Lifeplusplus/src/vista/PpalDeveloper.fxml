@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Pane prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="600.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <GridPane layoutX="243.0" layoutY="178.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints maxHeight="195.0" minHeight="10.0" prefHeight="44.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="195.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="332.0" minHeight="10.0" prefHeight="38.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="493.0" minHeight="10.0" prefHeight="413.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="457.0" minHeight="10.0" prefHeight="81.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <TextField fx:id="busquedaMedicos" onKeyReleased="#CargarMedicos" promptText="Buscar médicos" GridPane.rowIndex="2">
+               <GridPane.margin>
+                  <Insets left="20.0" right="20.0" />
+               </GridPane.margin>
+            </TextField>
+            <TextField fx:id="busquedaPacientes" onKeyReleased="#CargarPacientes" promptText="Buscar pacientes" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <GridPane.margin>
+                  <Insets left="20.0" right="20.0" />
+               </GridPane.margin>
+            </TextField>
+            <TextField fx:id="busquedaAyudas" onKeyReleased="#CargarAyudas" promptText="Buscar solicitudes" GridPane.columnIndex="2" GridPane.rowIndex="2">
+               <GridPane.margin>
+                  <Insets left="20.0" right="20.0" />
+               </GridPane.margin>
+            </TextField>
+            <Label text="Médicos registrados" textAlignment="CENTER" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="BOTTOM">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label text="Pacientes registrados" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="BOTTOM">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label text="Solicitudes de ayudas" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="BOTTOM">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <GridPane prefWidth="266.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="210.0" minWidth="10.0" percentWidth="70.0" prefWidth="183.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="118.0" minWidth="10.0" percentWidth="30.0" prefWidth="63.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <JFXButton fx:id="botonP0" onAction="#EditarUsuario" prefHeight="31.0" prefWidth="56.0" styleClass="BtnGeneral1" stylesheets="@../css/general.css" text="Abrir" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                  <JFXButton fx:id="botonP1" onAction="#EditarUsuario" prefHeight="31.0" prefWidth="56.0" styleClass="BtnGeneral1" stylesheets="@../css/general.css" text="Abrir" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+                  <JFXButton fx:id="botonP2" onAction="#EditarUsuario" prefHeight="31.0" prefWidth="56.0" styleClass="BtnGeneral1" stylesheets="@../css/general.css" text="Abrir" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
+                  <JFXButton fx:id="botonP3" onAction="#EditarUsuario" prefHeight="31.0" prefWidth="56.0" styleClass="BtnGeneral1" stylesheets="@../css/general.css" text="Abrir" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER" />
+                  <JFXButton fx:id="botonP4" onAction="#EditarUsuario" prefHeight="31.0" prefWidth="56.0" styleClass="BtnGeneral1" stylesheets="@../css/general.css" text="Abrir" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER" />
+                  <JFXButton fx:id="botonP5" onAction="#EditarUsuario" prefHeight="31.0" prefWidth="56.0" styleClass="BtnGeneral1" stylesheets="@../css/general.css" text="Abrir" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="5" GridPane.valignment="CENTER" />
+                  <JFXButton fx:id="botonP6" onAction="#EditarUsuario" prefHeight="31.0" prefWidth="56.0" styleClass="BtnGeneral1" stylesheets="@../css/general.css" text="Abrir" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="6" GridPane.valignment="CENTER" />
+                  <JFXButton fx:id="botonP7" onAction="#EditarUsuario" prefHeight="31.0" prefWidth="56.0" styleClass="BtnGeneral1" stylesheets="@../css/general.css" text="Abrir" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="7" GridPane.valignment="CENTER" />
+                  <Label fx:id="labelP0" prefHeight="21.0" prefWidth="165.0" text="Paciente 0" textAlignment="CENTER" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                  <Label fx:id="labelP1" prefHeight="21.0" prefWidth="165.0" text="Paciente 1" textAlignment="CENTER" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+                  <Label fx:id="labelP2" prefHeight="21.0" prefWidth="165.0" text="Paciente 2" textAlignment="CENTER" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
+                  <Label fx:id="labelP3" prefHeight="21.0" prefWidth="165.0" text="Paciente 3" textAlignment="CENTER" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER" />
+                  <Label fx:id="labelP4" prefHeight="21.0" prefWidth="165.0" text="Paciente 4" textAlignment="CENTER" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER" />
+                  <Label fx:id="labelP5" prefHeight="21.0" prefWidth="165.0" text="Paciente 5" textAlignment="CENTER" GridPane.halignment="CENTER" GridPane.rowIndex="5" GridPane.valignment="CENTER" />
+                  <Label fx:id="labelP6" prefHeight="21.0" prefWidth="165.0" text="Paciente 6" textAlignment="CENTER" GridPane.halignment="CENTER" GridPane.rowIndex="6" GridPane.valignment="CENTER" />
+                  <Label fx:id="labelP7" prefHeight="21.0" prefWidth="165.0" text="Paciente 7" textAlignment="CENTER" GridPane.halignment="CENTER" GridPane.rowIndex="7" GridPane.valignment="CENTER" />
+               </children>
+            </GridPane>
+            <GridPane GridPane.rowIndex="3">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="210.0" minWidth="10.0" prefWidth="183.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="118.0" minWidth="10.0" prefWidth="63.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <JFXButton fx:id="botonM0" onAction="#EditarUsuario" prefHeight="31.0" prefWidth="56.0" styleClass="BtnGeneral1" stylesheets="@../css/general.css" text="Abrir" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                  <JFXButton fx:id="botonM1" onAction="#EditarUsuario" prefHeight="31.0" prefWidth="56.0" styleClass="BtnGeneral1" stylesheets="@../css/general.css" text="Abrir" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+                  <JFXButton fx:id="botonM2" onAction="#EditarUsuario" prefHeight="31.0" prefWidth="56.0" styleClass="BtnGeneral1" stylesheets="@../css/general.css" text="Abrir" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
+                  <JFXButton fx:id="botonM3" onAction="#EditarUsuario" prefHeight="31.0" prefWidth="56.0" styleClass="BtnGeneral1" stylesheets="@../css/general.css" text="Abrir" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER" />
+                  <JFXButton fx:id="botonM4" onAction="#EditarUsuario" prefHeight="31.0" prefWidth="56.0" styleClass="BtnGeneral1" stylesheets="@../css/general.css" text="Abrir" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER" />
+                  <JFXButton fx:id="botonM5" onAction="#EditarUsuario" prefHeight="31.0" prefWidth="56.0" styleClass="BtnGeneral1" stylesheets="@../css/general.css" text="Abrir" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="5" GridPane.valignment="CENTER" />
+                  <JFXButton fx:id="botonM6" onAction="#EditarUsuario" prefHeight="31.0" prefWidth="56.0" styleClass="BtnGeneral1" stylesheets="@../css/general.css" text="Abrir" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="6" GridPane.valignment="CENTER" />
+                  <JFXButton fx:id="botonM7" onAction="#EditarUsuario" prefHeight="31.0" prefWidth="56.0" styleClass="BtnGeneral1" stylesheets="@../css/general.css" text="Abrir" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="7" GridPane.valignment="CENTER" />
+                  <Label fx:id="labelM0" prefHeight="21.0" prefWidth="165.0" text="Medico 0" textAlignment="CENTER" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                  <Label fx:id="labelM1" prefHeight="21.0" prefWidth="165.0" text="Medico 1" textAlignment="CENTER" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+                  <Label fx:id="labelM2" prefHeight="21.0" prefWidth="165.0" text="Medico 2" textAlignment="CENTER" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
+                  <Label fx:id="labelM3" prefHeight="21.0" prefWidth="165.0" text="Medico 3" textAlignment="CENTER" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER" />
+                  <Label fx:id="labelM4" prefHeight="21.0" prefWidth="165.0" text="Medico 4" textAlignment="CENTER" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER" />
+                  <Label fx:id="labelM5" prefHeight="21.0" prefWidth="165.0" text="Medico 5" textAlignment="CENTER" GridPane.halignment="CENTER" GridPane.rowIndex="5" GridPane.valignment="CENTER" />
+                  <Label fx:id="labelM6" prefHeight="21.0" prefWidth="165.0" text="Medico 6" textAlignment="CENTER" GridPane.halignment="CENTER" GridPane.rowIndex="6" GridPane.valignment="CENTER" />
+                  <Label fx:id="labelM7" prefHeight="21.0" prefWidth="165.0" text="Medico 7" textAlignment="CENTER" GridPane.halignment="CENTER" GridPane.rowIndex="7" GridPane.valignment="CENTER" />
+               </children>
+            </GridPane>
+            <Label fx:id="quienSoy" alignment="CENTER" contentDisplay="CENTER" prefHeight="21.0" prefWidth="304.0" text="Label" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+            <GridPane GridPane.rowIndex="4">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <JFXButton fx:id="elegirSolicitudes" onAction="#ElegirSolicitudes" prefHeight="31.0" prefWidth="120.0" styleClass="BtnGeneral1" stylesheets="@../css/general.css" text="Ver solicitudes" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                  <JFXButton fx:id="elegirMedicos" onAction="#ElegirMedicos" prefHeight="31.0" prefWidth="120.0" styleClass="BtnGeneral1" stylesheets="@../css/general.css" text="Ver medicos" textAlignment="CENTER" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+               </children>
+            </GridPane>
+            <GridPane GridPane.columnIndex="2">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="142.0" minWidth="10.0" prefWidth="131.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="164.0" minWidth="10.0" prefWidth="135.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <JFXButton fx:id="btnCerrarSesion" alignment="CENTER" buttonType="RAISED" maxWidth="110.0" onAction="#Logout" styleClass="BtnGeneral1" stylesheets="@../css/general.css" text="Cerrar sesión" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                  <JFXButton fx:id="btnDatosPersonales" alignment="CENTER" buttonType="RAISED" maxWidth="110.0" onAction="#EditarUsuario" prefWidth="146.0" styleClass="BtnGeneral1" stylesheets="@../css/general.css" text="Editar dev." textAlignment="CENTER" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+               </children>
+            </GridPane>
+            <GridPane GridPane.columnIndex="2" GridPane.rowIndex="3" GridPane.valignment="CENTER">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="210.0" minWidth="10.0" prefWidth="183.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="118.0" minWidth="10.0" prefWidth="63.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Label fx:id="labelA0" prefHeight="17.0" prefWidth="170.0" text="Ayuda 0" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+                     <GridPane.margin>
+                        <Insets left="10.0" />
+                     </GridPane.margin></Label>
+                  <Label fx:id="labelA1" prefHeight="17.0" prefWidth="170.0" text="Ayuda 1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+                     <GridPane.margin>
+                        <Insets left="10.0" />
+                     </GridPane.margin></Label>
+                  <Label fx:id="labelA2" prefHeight="17.0" prefWidth="170.0" text="Ayuda 2" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+                     <GridPane.margin>
+                        <Insets left="10.0" />
+                     </GridPane.margin></Label>
+                  <Label fx:id="labelA3" prefHeight="17.0" prefWidth="170.0" text="Ayuda 3" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER">
+                     <GridPane.margin>
+                        <Insets left="10.0" />
+                     </GridPane.margin></Label>
+                  <Label fx:id="labelA4" prefHeight="17.0" prefWidth="170.0" text="Ayuda 4" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER">
+                     <GridPane.margin>
+                        <Insets left="10.0" />
+                     </GridPane.margin></Label>
+                  <Label fx:id="labelA5" prefHeight="17.0" prefWidth="170.0" text="Ayuda 5" GridPane.halignment="CENTER" GridPane.rowIndex="5" GridPane.valignment="CENTER">
+                     <GridPane.margin>
+                        <Insets left="10.0" />
+                     </GridPane.margin></Label>
+                  <Label fx:id="labelA6" prefHeight="17.0" prefWidth="170.0" text="Ayuda 6" GridPane.halignment="CENTER" GridPane.rowIndex="6" GridPane.valignment="CENTER">
+                     <GridPane.margin>
+                        <Insets left="10.0" />
+                     </GridPane.margin></Label>
+                  <Label fx:id="labelA7" prefHeight="17.0" prefWidth="170.0" text="Ayuda 7" GridPane.halignment="CENTER" GridPane.rowIndex="7" GridPane.valignment="CENTER">
+                     <GridPane.margin>
+                        <Insets left="10.0" />
+                     </GridPane.margin></Label>
+                  <JFXButton fx:id="botonA0" onAction="#EditarUsuario" prefHeight="31.0" prefWidth="56.0" styleClass="BtnGeneral1" stylesheets="@../css/general.css" text="Abrir" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                  <JFXButton fx:id="botonA1" onAction="#EditarUsuario" prefHeight="31.0" prefWidth="56.0" styleClass="BtnGeneral1" stylesheets="@../css/general.css" text="Abrir" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+                  <JFXButton fx:id="botonA2" onAction="#EditarUsuario" prefHeight="31.0" prefWidth="56.0" styleClass="BtnGeneral1" stylesheets="@../css/general.css" text="Abrir" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
+                  <JFXButton fx:id="botonA3" onAction="#EditarUsuario" prefHeight="31.0" prefWidth="56.0" styleClass="BtnGeneral1" stylesheets="@../css/general.css" text="Abrir" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER" />
+                  <JFXButton fx:id="botonA4" onAction="#EditarUsuario" prefHeight="31.0" prefWidth="56.0" styleClass="BtnGeneral1" stylesheets="@../css/general.css" text="Abrir" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER" />
+                  <JFXButton fx:id="botonA5" onAction="#EditarUsuario" prefHeight="31.0" prefWidth="56.0" styleClass="BtnGeneral1" stylesheets="@../css/general.css" text="Abrir" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="5" GridPane.valignment="CENTER" />
+                  <JFXButton fx:id="botonA6" onAction="#EditarUsuario" prefHeight="31.0" prefWidth="56.0" styleClass="BtnGeneral1" stylesheets="@../css/general.css" text="Abrir" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="6" GridPane.valignment="CENTER" />
+                  <JFXButton fx:id="botonA7" onAction="#EditarUsuario" prefHeight="31.0" prefWidth="56.0" styleClass="BtnGeneral1" stylesheets="@../css/general.css" text="Abrir" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="7" GridPane.valignment="CENTER" />
+               </children>
+            </GridPane>
+            <GridPane GridPane.columnIndex="1" GridPane.rowIndex="4">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+              </columnConstraints>
+              <rowConstraints>
+                  <RowConstraints maxHeight="5.0" prefHeight="5.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="35.0" minHeight="10.0" prefHeight="35.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="35.0" minHeight="10.0" prefHeight="35.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="5.0" prefHeight="5.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <JFXButton fx:id="botonOedad" onAction="#OrdenarEdad" prefHeight="31.0" prefWidth="180.0" styleClass="BtnGeneral1" stylesheets="@../css/general.css" text="Ordenar por edad" textAlignment="CENTER" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+                  <Label fx:id="feedbackOrdenar" alignment="CENTER" contentDisplay="CENTER" prefHeight="21.0" prefWidth="304.0" text="No" textAlignment="CENTER" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
+               </children>
+            </GridPane>
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>
